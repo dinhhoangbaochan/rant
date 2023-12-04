@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Heredoc và Nowdoc trong PHP"
-date: 2023-11-28
+date: 2023-12-04
 categories: [coding-notes]
 tags: [php]
 author: Chan Dinh
@@ -49,4 +49,13 @@ $htmlCode = <<<'HTML'
 </div>
 HTML;
 ```
+
+## Tính ứng dụng
+
+Nhìn chung thì sau khi đọc xong một vài tài liệu cũng như chém gió với GPT, có thể thấy được một điều là Heredoc cũng như Nowdoc dù có vài điểm nổi trội nhưng rất ít khi được dùng trong các dự án, đặc biệt là các dự án lớn. Theo đó:
+- Heredoc và Nowdoc tuy khá hay ho nhưng lại tăng thêm sự khó khăn khi maintain các dự án lớn.
+- Không nhiều các team lớn chuộng kiểu viết của Heredoc hoặc Nowdoc.
+- Ở các dự án lớn, không thường các công ty sẽ ứng dụng các framework PHP vào (ví dụ Laravel). Các framework PHP thường sẽ đi kèm các template engine để render HTML (chẳng hạn như Blade hoặc Twig), vì vậy việc sử dụng Heredoc và Nowdoc là không cần thiết.
+
+Tóm gọn lại, đọc cho biết để lỡ sau này có rớ vào một source PHP thuần đời tám hoánh nào đó thì bạn sẽ đỡ bỡ ngỡ, còn lại thì không khuyến nghị ứng dụng vào các dự án thật.
 
