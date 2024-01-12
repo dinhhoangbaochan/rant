@@ -8,7 +8,7 @@
 .temp
 .vite_opt_cache
 .vscode
-dist
+.vitepress
 cache
 temp
 examples-temp
