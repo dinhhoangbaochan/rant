@@ -1,11 +1,11 @@
 ---
-layout: post
+id: 2
 title: "Heredoc và Nowdoc trong PHP"
 date: 2023-12-04
 categories: [coding-notes]
 tags: [php]
 author: Chan Dinh
-excerpt: "Phân biệt Heredoc và Nowdoc trong PHP"
+exc: "Phân biệt Heredoc và Nowdoc trong PHP"
 ---
 
 Heredoc và Nowdoc là hai cách để định nghĩa các chuỗi đa dòng (multiline strings) trong PHP. Hai kĩ thuật này được dùng để xử lý cách string mà bạn muốn escape những ký tự như ngoặc đơn (') hoặc hoặc kép ("). Ngoài ra, đối với Heredoc thì bạn còn có thể inject biến vào bên trong chuỗi.
