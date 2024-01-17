@@ -1,7 +1,9 @@
 import { defineConfig } from 'vitepress'
+// import { genFeed } from './genFeed.js'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "Chan Dinh"
+  title: 'Hello, Chan Dinh',
+  description: 'The official blog for the Vue.js project',
+  cleanUrls: true,
+  // buildEnd: genFeed
 })
