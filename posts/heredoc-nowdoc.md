@@ -5,6 +5,7 @@ date: 2023-12-04
 categories: [coding-notes]
 tags: [php]
 author: Chan Dinh
+gravatar: 40c375c9dbbfb6beda5e637079b7341dd87c1f29763338f37fea5b3cfb7d98e8
 excerpt: "Phân biệt Heredoc và Nowdoc trong PHP"
 ---
 
