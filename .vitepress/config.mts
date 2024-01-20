@@ -7,7 +7,7 @@ import fg from 'fast-glob' // make sure to install fast-glob
 export default defineConfig({
   // ... other config options
   title: 'Hello, Chan Dinh',
-  description: 'The official blog for the Vue.js project',
+  description: 'Where I write, share what I learn and also rant about what I hate...',
   cleanUrls: true,
   lastUpdated: true,
   buildEnd: async ({ outDir }) => {
