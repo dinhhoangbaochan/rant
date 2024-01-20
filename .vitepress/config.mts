@@ -15,10 +15,8 @@ export default defineConfig({
     const sitemap = new SitemapStream({ hostname: 'https://hello.chandinh.com/' })
     const writeStream = createWriteStream(resolve(outDir, 'sitemap.xml'))
 
-    streamToPromise(writeStream).then(data => writeFileSync(resolve(outDir, 'sitemap.xml'), data));
     sitemap.pipe(writeStream)
     files.forEach(file => {
-      // Transform file paths to URLs
       const url = file
         .replace(/^\.\/posts\//, '/posts/') // Replace './posts/' with '/posts/'
         .replace(/^\.\/pages\//, '/pages/') // Replace './pages/' with '/pages/'
@@ -26,8 +24,6 @@ export default defineConfig({
       sitemap.write({ url });
     });
     sitemap.end()
-
-    console.log(sitemap);
 
     await new Promise((resolve) => writeStream.on('finish', resolve))
   }
