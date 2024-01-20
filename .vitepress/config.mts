@@ -1,30 +1,34 @@
-import { createContentLoader, defineConfig } from 'vitepress'
-import { SitemapStream } from 'sitemap'
-import { createWriteStream } from 'node:fs'
+import { defineConfig } from 'vitepress'
+import { SitemapStream, streamToPromise } from 'sitemap'
+import { createWriteStream, writeFileSync } from 'node:fs'
 import { resolve } from 'node:path'
-// import { genFeed } from './genFeed.js'
+import fg from 'fast-glob' // make sure to install fast-glob
 
 export default defineConfig({
+  // ... other config options
   title: 'Hello, Chan Dinh',
   description: 'The official blog for the Vue.js project',
   cleanUrls: true,
-  // buildEnd: genFeed
   lastUpdated: true,
   buildEnd: async ({ outDir }) => {
+    const files = await fg(['./posts/**/*.md', './pages/**/*.md']); // Adjust the glob pattern to match your directory structure
     const sitemap = new SitemapStream({ hostname: 'https://hello.chandinh.com/' })
-    const pages = await createContentLoader('*.md').load()
     const writeStream = createWriteStream(resolve(outDir, 'sitemap.xml'))
 
+    streamToPromise(writeStream).then(data => writeFileSync(resolve(outDir, 'sitemap.xml'), data));
     sitemap.pipe(writeStream)
-    pages.forEach((page) => sitemap.write(
-      page.url
-        // Strip `index.html` from URL
-        .replace(/index$/g, '')
-        // Optional: if Markdown files are located in a subfolder
-        .replace(/^\/docs/, '')
-      ))
+    files.forEach(file => {
+      // Transform file paths to URLs
+      const url = file
+        .replace(/^\.\/posts\//, '/posts/') // Replace './posts/' with '/posts/'
+        .replace(/^\.\/pages\//, '/pages/') // Replace './pages/' with '/pages/'
+        .replace(/\.md$/, '.html') // Replace '.md' with '.html'
+      sitemap.write({ url });
+    });
     sitemap.end()
 
-    await new Promise((r) => writeStream.on('finish', r))
+    console.log(sitemap);
+
+    await new Promise((resolve) => writeStream.on('finish', resolve))
   }
 })
