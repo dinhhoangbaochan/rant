@@ -4,9 +4,10 @@ date: 2023-12-04
 categories: [coding-notes]
 author: Chan Dinh
 gravatar: 40c375c9dbbfb6beda5e637079b7341dd87c1f29763338f37fea5b3cfb7d98e8
+description: Tìm hiểu vì sao mà node_modules của bạn rất nặng và có rất nhiều packages mà bạn không hề biết đến sự tồn tại của nó
 ---
 
-Có bao giờ bạn thắc mắc vì sao mà node_modules của bạn rất nặng và có rất nhiều packages mà bạn không hề biết vì sao nó lại nằm ở đó mặc dù bạn nhớ là bạn không hề cài trước đó không? Trong bài viết này, tui sẽ cố gắng giải thích một cách đơn giản cho "hiện tượng" nêu trên.
+Có bao giờ bạn thắc mắc vì sao mà node_modules của bạn rất nặng và có rất nhiều packages mà bạn không hề biết đến sự tồn tại của nó, mặc dù bạn nhớ là bạn không hề cài trước đó không? Trong bài viết này, tui sẽ cố gắng giải thích một cách đơn giản cho "hiện tượng" nêu trên.
 
 ---
 

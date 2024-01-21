@@ -1,8 +1,9 @@
-import { defineConfig } from 'vitepress'
-import { SitemapStream, streamToPromise } from 'sitemap'
-import { createWriteStream, writeFileSync } from 'node:fs'
-import { resolve } from 'node:path'
-import fg from 'fast-glob' // make sure to install fast-glob
+import { SiteConfig, defineConfig } from 'vitepress'
+import generateSitemap from './theme/hook/generateSitemap.js';
+import generateMeta from './theme/hook/generateMeta.js';
+
+const hostname: string = 'https://hello.chandinh.com';
+
 
 export default defineConfig({
   // ... other config options
@@ -10,21 +11,10 @@ export default defineConfig({
   description: 'Where I write, share what I learn and also rant about what I hate...',
   cleanUrls: true,
   lastUpdated: true,
-  buildEnd: async ({ outDir }) => {
-    const files = await fg(['./posts/**/*.md', './pages/**/*.md']); // Adjust the glob pattern to match your directory structure
-    const sitemap = new SitemapStream({ hostname: 'https://hello.chandinh.com/' })
-    const writeStream = createWriteStream(resolve(outDir, 'sitemap.xml'))
-
-    sitemap.pipe(writeStream)
-    files.forEach(file => {
-      const url = file
-        .replace(/^\.\/posts\//, '/posts/') // Replace './posts/' with '/posts/'
-        .replace(/^\.\/pages\//, '/pages/') // Replace './pages/' with '/pages/'
-        .replace(/\.md$/, '.html') // Replace '.md' with '.html'
-      sitemap.write({ url });
-    });
-    sitemap.end()
-
-    await new Promise((resolve) => writeStream.on('finish', resolve))
+  transformHead: async (context) => (
+    generateMeta(context, hostname)
+  ),
+  buildEnd: async ({outDir}) => {
+    generateSitemap(outDir)
   }
 })
