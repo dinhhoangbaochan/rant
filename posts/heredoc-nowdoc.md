@@ -1,14 +1,14 @@
 ---
-layout: post
 title: "Heredoc và Nowdoc trong PHP"
 date: 2023-12-04
 categories: [coding-notes]
 tags: [php]
 author: Chan Dinh
 gravatar: 40c375c9dbbfb6beda5e637079b7341dd87c1f29763338f37fea5b3cfb7d98e8
+description: Tìm hiểu về Heredoc và Nowdoc trong PHP, khái niệm cơ bản, cách phân biệt và cách sử dụng chúng trong dự án.
 ---
 
-Heredoc và Nowdoc trong PHP, cách phân biệt và cách sử dụng.
+Tìm hiểu về Heredoc và Nowdoc trong PHP, khái niệm cơ bản, cách phân biệt và cách sử dụng chúng trong dự án.
 
 ---
 
