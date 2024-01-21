@@ -62,3 +62,10 @@ Nhìn chung thì sau khi đọc xong một vài tài liệu cũng như chém gi�
 - Ở các dự án lớn, không thường các công ty sẽ ứng dụng các framework PHP vào (ví dụ Laravel). Các framework PHP thường sẽ đi kèm các template engine để render HTML (chẳng hạn như Blade hoặc Twig), vì vậy việc sử dụng Heredoc và Nowdoc là không cần thiết.
 
 Tóm gọn lại, đọc cho biết để lỡ sau này có rớ vào một source PHP thuần đời tám hoánh nào đó thì bạn sẽ đỡ bỡ ngỡ, còn lại thì không khuyến nghị ứng dụng vào các dự án thật.
+
+```
+Do blog cá nhân được vận hành một cách tối giản giúp tiết kiệm kinh phí nên bản thân blog vẫn còn trong giai đoạn xây dựng và cũng vì vậy, tui cũng không implement tính năng comment. Tuy nhiên, tui sẽ rất vui nếu có thể được lắng nghe ý kiến từ những ai đó đọc được bài viết trôi nổi trên internet này, hy vọng được học hỏi từ các bạn, các anh chị em cô dì chú bác gần xa. Bạn có thể open issue tại repo blog của tui, hoặc inbox tui tại địa chỉ email là (dinhhoangbaochan@gmail.com)[mailto:dinhhoangbaochan@gmail.com].
+
+Best regards,
+Chan
+```
