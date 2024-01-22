@@ -37,11 +37,4 @@ Trước khi viết bài này, tui đã tham khảo một số người anh em �
 
 Vậy nhưng bạn có biết, lần đầu  khi tui đặt câu hỏi này ra với những người tiền bối trước đó của tui vào đâu đó khoảng cỡ hơn 1 năm trước thì tui đã nhận được reaction thế nào không? Đầu tiên là cười nhạo và sau đó là lời phản hồi vô cùng quen thuộc: `Cái này cơ bản mà cũng phải hỏi thì nên xem lại`, LOL. Và đây chính là nguyên nhân tui viết bài này. Những gì được viết trên blog của tui, phần lớn đều là những kiến thức do tui đúc kết và học được. Việc chia sẻ những kiến thức này sẽ giúp cho tui (và bạn) cùng trở thành những kĩ sư giỏi hơn vì suy cho cùng thì kiến thức là vô tận và chặng đường học là một chặng đường không có hồi kết.
 
-Anyway thì trong một dịp khác, tui sẽ viết một rant article về việc chia sẻ kiến thức, sự lạm phát title ***seniors*** và cách để nhận định giữa một kĩ sư giỏi và một kĩ sư ng* l*n. 
-
-```
-Do blog cá nhân được vận hành một cách tối giản giúp tiết kiệm kinh phí nên bản thân blog vẫn còn trong giai đoạn xây dựng và cũng vì vậy, tui cũng không implement tính năng comment. Tuy nhiên, tui sẽ rất vui nếu có thể được lắng nghe ý kiến từ những ai đó đọc được bài viết trôi nổi trên internet này, hy vọng được học hỏi từ các bạn, các anh chị em cô dì chú bác gần xa. Bạn có thể open issue tại repo blog của tui, hoặc inbox tui tại địa chỉ email là (dinhhoangbaochan@gmail.com)[mailto:dinhhoangbaochan@gmail.com].
-
-Best regards,
-Chan
-```
+Anyway thì trong một dịp khác, tui sẽ viết một rant article về việc chia sẻ kiến thức, sự lạm phát title ***seniors*** và cách để nhận định giữa một kĩ sư giỏi và một kĩ sư ng* l*n, còn bài viết này hôm nay thì tới đây thôi, bái bai.
