@@ -1,20 +1,17 @@
 {
+  "name": "nuxt-app",
+  "private": true,
   "type": "module",
-  "devDependencies": {
-    "@tailwindcss/typography": "^0.5.10",
-    "@types/markdown-it": "^13.0.7",
-    "@types/node": "^20.11.5",
-    "autoprefixer": "^10.4.16",
-    "feed": "^4.2.2",
-    "gray-matter": "^4.0.3",
-    "postcss": "^8.4.33",
-    "sitemap": "^7.1.1",
-    "tailwindcss": "^3.4.1",
-    "vitepress": "^1.0.0-rc.39"
-  },
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "^3.12.2",
+    "vue": "^3.4.29",
+    "vue-router": "^4.3.3"
   }
 }
