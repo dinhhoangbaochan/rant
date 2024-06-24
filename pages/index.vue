@@ -9,10 +9,18 @@
           {{ post.title }} + 
           {{ post._path }}
         </a>
-        <pre>
+        <!-- <pre>
           {{ post }}
-        </pre>
+        </pre> -->
       </li>
     </ContentList>
   </ul>
 </template>
+
+<script setup>
+import { useGlobalStates } from '@/stores/global';
+
+const globalStates = useGlobalStates();
+const themeMode = globalStates.currentMode;
+console.log(themeMode);
+</script>
