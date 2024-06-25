@@ -4,7 +4,7 @@
   <h2>List of blog posts</h2>
   <ul>
     <ContentList path="/posts" v-slot="{list}">
-      <li class="" v-for="post in list">
+      <li class="" v-for="post in list" v-bind:key="post.id">
         <a :href="post._path">
           {{ post.title }} + 
           {{ post._path }}
@@ -16,11 +16,3 @@
     </ContentList>
   </ul>
 </template>
-
-<script setup>
-import { useGlobalStates } from '@/stores/global';
-
-const globalStates = useGlobalStates();
-const themeMode = globalStates.currentMode;
-console.log(themeMode);
-</script>
