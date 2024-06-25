@@ -1,5 +1,25 @@
 ---
-title: Hello, Chan Dinh
-subtext: Where I write about what I like, share about what I learn and also rant about what I hate...
-index: true
+# https://vitepress.dev/reference/default-theme-home-page
+layout: home
+
+hero:
+  name: "Hello, Chan Dinh"
+  text: "Where I write my notes and my rants"
+  tagline: My great project tagline
+  actions:
+    - theme: brand
+      text: Markdown Examples
+      link: /markdown-examples
+    - theme: alt
+      text: API Examples
+      link: /api-examples
+
+features:
+  - title: Feature A
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Feature B
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Feature C
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
+

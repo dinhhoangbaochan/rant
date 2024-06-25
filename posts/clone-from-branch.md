@@ -8,6 +8,8 @@ gravatar: 40c375c9dbbfb6beda5e637079b7341dd87c1f29763338f37fea5b3cfb7d98e8
 description: Tìm hiểu cách để có thể clone source trên một repository tại Github từ một branch cụ thể thay vì branch mặc định. 
 ---
 
+# Cách clone source git từ một branch riêng biệt
+
 Tìm hiểu cách để có thể clone source trên một repository tại Github từ một branch cụ thể, thay vì branch mặc định (thường là `master` hoặc `main`).
 
 ---
