@@ -1,4 +1,5 @@
 ---
+layout: doc
 title: "Heredoc và Nowdoc trong PHP"
 date: 2023-12-04
 categories: [coding-notes]
