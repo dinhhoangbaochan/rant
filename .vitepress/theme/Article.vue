@@ -20,22 +20,22 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
 </script>
 
 <template>
-  <article class="xl:divide-y xl:divide-gray-200 dark:xl:divide-slate-200/5">
+  <article class="xl:divide-y xl:divide-slate-200/5">
     <header class="pt-6 xl:pb-10 space-y-1 text-center">
       <!-- <Date :date="date" /> -->
-      <h1 class="text-3xl leading-9 font-extrabold text-gray-900 dark:text-white tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+      <h1 class="text-3xl leading-9 font-extrabold text-white tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
         {{ data.title }}
       </h1>
     </header>
 
-    <div class="divide-y xl:divide-y-0 divide-gray-200 dark:divide-slate-200/5 xl:grid xl:grid-cols-4 xl:gap-x-10 pb-16 xl:pb-20" style="grid-template-rows: auto 1fr">
+    <div class="divide-y xl:divide-y-0 divide-slate-200/5 xl:grid xl:grid-cols-4 xl:gap-x-10 pb-16 xl:pb-20" style="grid-template-rows: auto 1fr">
       <Author />
 
-      <div class="divide-y divide-gray-200 dark:divide-slate-200/5 xl:pb-0 xl:col-span-3 xl:row-span-2">
-        <Content class="prose dark:prose-invert max-w-none pt-10 pb-8" />
+      <div class="divide-y divide-slate-200/5 xl:pb-0 xl:col-span-3 xl:row-span-2">
+        <Content class="prose prose-invert max-w-none pt-10 pb-8" />
 
-        <div class="divide-y divide-gray-200 my-5 bg-[#f7f7f7] p-6 rounded-[10px] text-[15px] italic tracking-wide">
-          <p>
+        <div class="divide-y divide-slate-300 my-5 bg-[#242424] p-6 rounded-[10px] text-[15px] italic tracking-wide text-white">
+          <p class="pb-4">
             Do blog cá nhân được vận hành một cách tối giản giúp tiết kiệm kinh phí nên bản thân blog vẫn còn trong giai đoạn xây dựng và cũng vì vậy, tui cũng không implement tính năng comment. <br><br>
             
             Tuy nhiên, tui sẽ rất vui nếu có thể được lắng nghe ý kiến từ những ai đó đọc được bài viết trôi nổi trên internet này, hy vọng được học hỏi từ các bạn, các anh chị em cô dì chú bác gần xa. Bạn có thể open issue tại <a href="https://github.com/dinhhoangbaochan/hello-chandinh" target="_blank" class="underline text-emerald-800 font-semibold">repo blog</a> của tui, hoặc inbox tui tại địa chỉ email là <a class="underline text-emerald-800 font-semibold" href="mailto:dinhhoangbaochan@gmail.com">dinhhoangbaochan@gmail.com.</a>
@@ -47,9 +47,9 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
         </div>
       </div>
 
-      <footer class="text-sm font-medium leading-5 divide-y divide-gray-200 dark:divide-slate-200/5 xl:col-start-1 xl:row-start-2" >
+      <footer class="text-sm font-medium leading-5 divide-y divide-slate-200/5 xl:col-start-1 xl:row-start-2" >
         <div v-if="nextPost" class="py-8">
-          <h2 class="text-xs tracking-wide uppercase text-gray-500 dark:text-white">
+          <h2 class="text-xs tracking-wide uppercase text-white">
             Next Article
           </h2>
           <div class="link">
@@ -57,7 +57,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
           </div>
         </div>
         <div v-if="prevPost" class="py-8">
-          <h2 class="text-xs tracking-wide uppercase text-gray-500 dark:text-white">
+          <h2 class="text-xs tracking-wide uppercase text-white">
             Previous Article
           </h2>
           <div class="link">
