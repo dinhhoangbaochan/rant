@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://hello.chandinh.com/sitemap.xml
