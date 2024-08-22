@@ -23,7 +23,7 @@ Một vài nguồn tui đã đọc khi viết bài này, bạn nên đọc qua n
 - [Semantic HTML: What It Is and How to Use It Correctly](https://www.semrush.com/blog/semantic-html5-guide/).
 - [HTML: A good basis for accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML#good_semantics).
 - [Semantic HTML](https://web.dev/learn/html/semantic-html).
-- [HTML <aside> Tag](https://www.w3schools.com/tags/tag_aside.asp).
+- [HTML aside Tag](https://www.w3schools.com/tags/tag_aside.asp).
 - [What is a screen reader?](https://axesslab.com/what-is-a-screen-reader/).
 
 ## Semantic HTML là cái gì? 
