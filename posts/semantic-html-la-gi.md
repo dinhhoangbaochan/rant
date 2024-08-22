@@ -16,6 +16,16 @@ Dùng HTML nhiều rồi nhưng có bao giờ bạn nghe tới Semantic HTML ch�
 
 Trước khi bắt đầu bài viết, dạo này tui đang tập nghiên cứu / học tập theo phương thức 5W1H để giúp việc học tập nó được thuận tiện hơn và có cấu trúc hơn. Vì vậy, trong phạm vi bài viết này, tui cũng sẽ thử viết theo pattern này nha (không biết gọi là **pattern** thì có phù hợp không ta?).
 
+## Credit
+
+Một vài nguồn tui đã đọc khi viết bài này, bạn nên đọc qua những article này (hoặc đọc thẳng vào mấy article này luôn, đặc biệt là bài đầu tiên là được, khỏi cần đọc bài tui viết).
+
+- [Semantic HTML: What It Is and How to Use It Correctly](https://www.semrush.com/blog/semantic-html5-guide/).
+- [HTML: A good basis for accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML#good_semantics).
+- [Semantic HTML](https://web.dev/learn/html/semantic-html).
+- [HTML <aside> Tag](https://www.w3schools.com/tags/tag_aside.asp).
+- [What is a screen reader?](https://axesslab.com/what-is-a-screen-reader/).
+
 ## Semantic HTML là cái gì? 
 
 Đầu tiên thì cái chữ Semantic này nếu bạn tìm trên Google Dịch thì bạn sẽ thấy, Semantic có nghĩa là **ngữ nghĩa** hoặc là **thuộc về mặt ngữ nghĩa**. Dịch chữ này ra thôi thì bạn cũng sẽ nắm được sơ bộ Semantic HTML là gì rồi. Semantic HTML có thể hiểu đại ý là **HTML có ý nghĩa**. Vậy HTML có ý nghĩa là gì?
