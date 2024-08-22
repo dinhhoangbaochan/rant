@@ -44,5 +44,3 @@ Trước mắt thì như này, bắt tay vào làm tới đâu tui sửa tới �
 Rồi giờ thì bắt tay vào làm. Viết tới dòng này, mở VS Code lên, tự hỏi "Ủa mà giờ làm gì tiếp ta?"... 
 
 Đói thì phải ăn, yêu thì phải nói, không hiểu thì phải search. Chúng ta bắt đầu từ search Google trước nhé. Cầm nguyên cái từ khoá `how to build a blog with native javascript` này vứt lên Google trước thử xem sao.
-
-***Updating...***
