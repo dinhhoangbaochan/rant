@@ -75,11 +75,3 @@ Sau khi hướng dẫn tui mở Auto Subtitle của Google Meet thì cái chữ 
 ## Kết
 
 Ban đầu tui định viết 5W1H thật, nhưng sau hai phần What với Why, thì tui nghĩ các bạn cũng tự hình dung ra được những phần: Who (ai dùng mấy cái Semantic HTML này), When (khi nào dùng Semantic HTML), Where (dùng Semantic HTML ở đâu), How (dùng Semantic HTML như thế nào). Vậy nên thôi tạm dừng bài viết ở đây vì nó dài quá rồi. Vài ba hôm sau tui đọc lại, tui nghĩ ra cái gì hay ho tui sẽ edit lại sau, bái bai. 
-
-### Credit
-
-- [Semantic HTML: What It Is and How to Use It Correctly](https://www.semrush.com/blog/semantic-html5-guide/).
-- [HTML: A good basis for accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML#good_semantics).
-- [Semantic HTML](https://web.dev/learn/html/semantic-html).
-- [HTML <aside> Tag](https://www.w3schools.com/tags/tag_aside.asp).
-- [What is a screen reader?](https://axesslab.com/what-is-a-screen-reader/).
