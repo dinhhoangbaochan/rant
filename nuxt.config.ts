@@ -2,5 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  css: ['~/assets/scss/main.scss']
+  css: ['~/assets/scss/main.scss'],
+  modules: ['@nuxt/content', '@nuxtjs/mdc'],
+  content: {
+    highlight: {
+      theme: "material-theme-darker",
+      langs: ['php', 'js', 'html', 'css', 'shell', 'bash']
+    }
+  }
 })
