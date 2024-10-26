@@ -2,6 +2,7 @@
   <div class="main">
     <div class="container">
       <Header />
+      <Hero />
     </div>
   </div>
 </template>
