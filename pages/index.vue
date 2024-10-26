@@ -1,11 +1,11 @@
 <template>
-  <div class="main">
+  <main>
     <div class="container">
       <Header />
       <Hero />
       <PostList />
     </div>
-  </div>
+  </main>
 </template>
 
 <script lang="ts" setup>
