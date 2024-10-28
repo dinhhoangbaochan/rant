@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     highlight: {
       theme: "material-theme-darker",
       langs: ['php', 'js', 'html', 'css', 'shell', 'bash']
-    }
+    },
+    documentDriven: true,
   }
 })
