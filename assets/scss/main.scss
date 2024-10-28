@@ -1,4 +1,5 @@
 @use 'header.scss';
+@use 'hero.scss';
 
 * {
   box-sizing: border-box;
@@ -8,10 +9,50 @@
   font-family: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
 }
 
+h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+a {
+  font-size: 14px;
+  color: #3eaf7c;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: #31c573;
+  }
+}
+
 main {
   .container {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid #3d3c3c78;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.post-list {
+  .post-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    a {
+      width: fit-content;
+    }
   }
 }

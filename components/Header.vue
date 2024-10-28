@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header py-4">
     <div class="logo">
       <img src="~/assets/images/code_main.svg" alt="">
     </div>

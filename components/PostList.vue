@@ -1,7 +1,7 @@
 <template>
   <section class="post-list">
-    <div class="post-item" v-for="post in postList" :key="post._path">
-      <h3>{{ post.title }}</h3>
+    <div class="post-item py-4 border-bottom" v-for="post in postList" :key="post._path">
+      <h2>{{ post.title }}</h2>
       <p>{{ post.description }}</p>
       <NuxtLink :to="post._path">Read More =></NuxtLink>
     </div>
