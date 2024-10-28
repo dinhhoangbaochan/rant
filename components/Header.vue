@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="logo">
-      >_
+      <img src="~/assets/images/code_main.svg" alt="">
     </div>
     
     <div class="social-links">
