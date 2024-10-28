@@ -1,11 +1,11 @@
 <template>
-  <div class="post-list">
+  <section class="post-list">
     <div class="post-item" v-for="post in postList" :key="post._path">
       <h3>{{ post.title }}</h3>
       <p>{{ post.description }}</p>
       <NuxtLink :to="post._path">Read More =></NuxtLink>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>

@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <header class="header">
     <div class="logo">
       <img src="~/assets/images/code_main.svg" alt="">
     </div>
@@ -8,5 +8,5 @@
       <a href="#">Github</a>
       <a href="#">LinkedIn</a>
     </div>
-  </div>
+  </header>
 </template>
