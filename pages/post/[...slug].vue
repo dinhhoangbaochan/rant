@@ -7,9 +7,13 @@
           <section class="article-title">
             <dl>{{ doc.date }}</dl>
             <h1>{{ doc.title }}</h1>
+            <p>{{ doc.description }}</p>
           </section>
-          
-          <ContentRenderer :value="doc" />
+
+          <section class="article-content">
+            <ContentRenderer :value="doc" />
+          </section>
+
         </article>
       </ContentDoc>
     </div>
@@ -23,5 +27,5 @@
   const currentPost = await queryContent(route.fullPath).find();
   const postDate = new Date(currentPost[0].date);
 
-  console.log(currentPost, postDate.getMonth() + 1);
+  // console.log(currentPost, postDate.getMonth() + 1);
 </script>

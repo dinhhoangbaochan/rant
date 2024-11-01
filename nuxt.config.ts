@@ -10,6 +10,9 @@ export default defineNuxtConfig({
       langs: ['php', 'js', 'html', 'css', 'shell', 'bash']
     },
     documentDriven: true,
+    markdown: {
+      anchorLinks: false
+    }
   },
   app: {
     head: {

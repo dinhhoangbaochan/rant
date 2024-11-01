@@ -1,3 +1,28 @@
 .article-title {
   text-align: center;
+  padding: 0 0 4rem 0;
+}
+
+.article-content {
+  * {
+    //line-height: 30px;
+  }
+
+  h2, h3 {
+    padding: 12px 0;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  hr:first-of-type {
+    margin: 2rem 0;
+    border-top: 1px solid #575757;
+    border-bottom: 0;
+  }
 }
