@@ -7,7 +7,6 @@
           <section class="article-title">
             <dl>{{ doc.date }}</dl>
             <h1>{{ doc.title }}</h1>
-            <p>{{ doc.description }}</p>
           </section>
 
           <section class="article-content">
